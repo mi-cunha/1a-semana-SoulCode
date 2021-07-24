@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <p>Cadastre-se para receber novidades e promoções da Cine SoulCode! <br>
+    Preencha seus dados abaixo:</p>
+    <form action="/pagina-processa-dados-do-form" method="post"> <br>
+        <label for="nome"><b>Nome: *</b></label> <br>
+        <input type="text" id="nome" required> <br>
+
+        <label for="sobrenome"><b>Sobrenome: *</b></label> <br>
+        <input type="text" id="nome" required> <br>
+
+        <label for="cpf"><b>CPF: *</b></label> <br>
+        <input type="tel" placeholder="000000000-00" required> <br>
+
+        <label for="datanasc"><b>Data de Nascimento: *</b></label> <br>
+        <input type="date" placeholder="00/00/0000" required> <br>
+
+        <label for="email"><b>E-mail: *</b></label> <br>
+        <input type="email" id="email" placeholder="joao.silva@gmail.com" required> <br>
+        
+        <label for="sexo"><b>Sexo:</b></label> <br>
+        <select name="sexo" id="sexo">
+            <option value="homemcis">Homem cisgênero</option>
+            <option value="mulhercis">Mulher cisgênero</option>
+            <option value="homemtrans">Homem Transgênero</option>
+            <option value="mulhertrans">Mulher Transgênero</option>
+            <option value="outros">Outros</option>
+            <option value="naoresponde">Prefiro não responder</option>
+        </select> <br>
+
+        <label for="tele"><b>Telefone (DDD + número):</b></label> <br>
+        <input type="tel" id="tele" placeholder="(00) 00000-0000"> <br>
+
+        <label for="cep"><b>CEP: *</b></label> <br>
+        <input type="number" name="cep" id="cep" required> <br>
+        
+        <label for="estado"><b>Estado:</b></label> <br>
+        <input type="text" id="estado"> <br>
+        
+        <label for="Cidade"><b>Cidade:</b></label> <br>
+        <input type="text" id="cidade"> <br>
+
+        <label for="login"><b>Login do usuário: *</b></label> <br>
+        <input type="text" required> <br>
+
+        <label for="senha"><b>Senha: *</b></label> <br>
+        <input type="password" required> <br> <br>
+     
+        <input type="checkbox" id="novidades" name="aceitanovidades" value="aceitanovidades"> 
+        <label for="">Aceito receber novidades por e-mail da Cine SoulCode</label> <br><br>
+        
+        
+        <button type="submit">Cadastrar</button>
+       
+        
+
+
+
+    </form>
+
+</body>
+</html>
